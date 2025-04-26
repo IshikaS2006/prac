@@ -12,13 +12,6 @@ const Cards = () => {
       tags: ["Figma", "Tailwind CSS", "React"],
     },
     {
-      title: "Finance Mobile App",
-      category: "Mobile Development",
-      image: "https://cdn.dribbble.com/userupload/18448530/file/original-e12baeae4dffc4ea39a28ed6586c2fd9.png?resize=1504x846&vertical=center",
-      color: "#192826",
-      tags: ["React Native", "Firebase", "UI Design"],
-    },
-    {
       title: "Smart Home Interface",
       category: "IoT Design",
       image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb",
@@ -32,6 +25,14 @@ const Cards = () => {
       color: "#1E3A5F",
       tags: ["JavaScript", "GSAP", "Framer Motion"],
     },
+    
+    {
+      title: "Finance Mobile App",
+      category: "Web Development",
+      image: "https://cdn.dribbble.com/userupload/18448530/file/original-e12baeae4dffc4ea39a28ed6586c2fd9.png?resize=1504x846&vertical=center",
+      color: "#192826",
+      tags: ["React Native", "Firebase", "UI Design"],
+    },
   ];
 
   return (
@@ -44,22 +45,22 @@ const Cards = () => {
           transition={{ duration: 0.6 }}
           className="flex flex-col md:flex-row justify-between items-start md:items-center"
         >
-          <h2 className="text-4xl md:text-6xl font-light tracking-tighter text-white">
+          <h2 className="text-2xl md:text-5xl font-light tracking-tighter text-white">
             More <span className="font-bold">Projects</span>
           </h2>
-          <p className="text-zinc-400 max-w-xs mt-4 md:mt-0">
+          <p className="text-zinc-400 max-w-xs  text-sm">
             Explore a selection of my additional works spanning various technologies and design concepts.
           </p>
         </motion.div>
       </div>
 
-      <div className="w-full px-6 md:px-12 lg:px-20 py-16">
+      <div className="w-full px-6 md:px-12 lg:px-20 py-16 text-sm">
         <motion.div 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 text-sm"
         >
           {additionalProjects.map((project, index) => (
             <motion.div
@@ -68,16 +69,16 @@ const Cards = () => {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="card-container h-[40vh] md:h-[50vh]"
+              className="card-container h-[40vh] md:h-[50vh] text-sm"
             >
               <motion.div 
                 whileHover={{ y: -10, boxShadow: "0 20px 25px -5px rgba(0,0,0,0.2)" }}
                 transition={{ duration: 0.3 }}
-                className="card relative rounded-xl w-full h-full overflow-hidden"
+                className="card relative rounded-xl w-full h-full overflow-hidden text-sm"
                 style={{ backgroundColor: project.color }}
               >
                 {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent z-10"></div>
+                <div className="absolute inset-0 text-sm bg-gradient-to-t from-black/80 via-black/30 to-transparent z-10"></div>
                 
                 {/* Project image */}
                 <motion.img
@@ -89,9 +90,9 @@ const Cards = () => {
                 />
                 
                 {/* Project info */}
-                <div className="absolute z-20 bottom-0 left-0 p-6 md:p-8 w-full">
-                  <span className="text-sm text-white/70 uppercase tracking-wider">{project.category}</span>
-                  <h3 className="text-2xl md:text-3xl text-white mt-2 font-medium">{project.title}</h3>
+                <div className="absolute z-20 bottom-0 left-0 p-6 text-sm md:p-8 w-full">
+                  <span className="text-sm text-white/70 uppercase text-sm tracking-wider">{project.category}</span>
+                  <h3 className="text-2xl md:text-xl text-white mt-2 font-medium">{project.title}</h3>
                   
                   {/* Tags */}
                   <div className="flex flex-wrap gap-2 mt-4">
@@ -140,9 +141,9 @@ const Cards = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
             whileHover={{ scale: 1.05 }}
-            className="px-8 py-4 bg-white text-zinc-900 rounded-full flex items-center gap-3 font-medium"
+            className="px-4 py-3 bg-white text-zinc-900 rounded-full flex items-center gap-3 font-medium text-sm"
           >
-            <span>Browse Complete Portfolio</span>
+            <span className="text-sm">Browse Complete Portfolio</span>
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>

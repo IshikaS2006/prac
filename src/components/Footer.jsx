@@ -49,7 +49,7 @@ const Footer = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.4 }}
-        className="max-w-lg text-gray-300 text-lg"
+        className="max-w-lg text-gray-300 text-sm"
       >
         Have a project in mind or just want to say hello? Feel free to reach out.
       </motion.p>
@@ -66,7 +66,7 @@ const Footer = () => {
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-3 rounded-full bg-zinc-800 hover:bg-indigo-600 text-gray-300 hover:text-white transition-all duration-300"
+            className="flex items-center gap-2 px-4 py-3 rounded-full bg-zinc-800  text-sm hover:bg-indigo-600 text-gray-300 hover:text-white transition-all duration-300"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             initial={{ opacity: 0, y: 20 }}

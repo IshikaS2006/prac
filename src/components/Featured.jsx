@@ -15,7 +15,7 @@ function Featured() {
   return (<>
     <div className="w-full py-10">
       <div className="pt-30 pb-5 w-full border-b-[5px] border-zinc-800 px-20 text-zinc-800">
-        <h1 className="text-7xl tracking-tighter">Featured projects</h1>
+        <h1 className="text-5xl tracking-tighter">Featured projects</h1>
       </div>
       <div className="px-20">
         <div className="cards flex w-full gap-10 mt-10">
@@ -24,7 +24,7 @@ function Featured() {
             onHoverEnd={() => handleHoverEnd(0)}
             className=" cardconainer relative w-1/2 h-[75vh] "
           >
-            <h1 className="leading-none absolute left-full top-1/2 -translate-x-[50%]  -translate-y-[50%] text-[#689aea] z-[9] text-8xl flex tracking-tight overflow-hidden uppercase">
+            <h1 className="leading-none absolute left-full top-1/2 -translate-x-[50%]  -translate-y-[50%] text-[#689aea] z-[9] text-5xl flex tracking-tight overflow-hidden uppercase">
               {"IOT-BASED".split("").map((item, index) => (
                 <motion.span
                   initial={{ y: "100%" }}
@@ -50,7 +50,7 @@ function Featured() {
             className=" relative cardcontainer w-1/2 h-[75vh] "
           >
             <div className="card overflow-hidden w-full h-full rounded-xl">
-              <h1 className="leading-none flex overflow-hidden absolute right-full top-1/2 translate-x-[50%]  -translate-y-[50%] text-[#689aea] z-[9] text-8xl tracking-tight uppercase">
+              <h1 className="leading-none flex overflow-hidden absolute right-full top-1/2 translate-x-[50%]  -translate-y-[50%] text-[#689aea] z-[9] text-5xl tracking-tight uppercase">
                 {"FRONTEND".split("").map((item, index) => (
                   <motion.span
                     initial={{ y: "100%" }}

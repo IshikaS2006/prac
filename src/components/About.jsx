@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="w-full bg-zinc-900 rounded-tl-3xl rounded-tr-3xl p-6 md:p-20">
       <div className="flex items-center gap-4">
-        <h1 className="text-3xl md:text-5xl text-white uppercase tracking-wider font-light">
+        <h1 className="text-2xl md:text-4xl text-white uppercase tracking-wider font-light">
           About Me
         </h1>
         <div className="h-px bg-amber-50/30 flex-grow ml-4"></div>
@@ -13,12 +13,12 @@ const About = () => {
       <div className="w-full border-t-[1px] border-zinc-700 p-4 md:p-10 mt-10 md:mt-20 flex flex-col md:flex-row gap-10">
         <div className="w-full md:w-2/3">
           <div className="relative">
-            <span className="text-6xl text-amber-50/10 absolute -top-10 -left-6">"</span>
-            <p className="text-xl md:text-2xl lg:text-3xl text-zinc-100 leading-relaxed font-light">
+            <span className="text-4xl text-amber-50/10 absolute -top-10 -left-6">"</span>
+            <p className="text-md md:text-2xl lg:text-2xl text-zinc-100 leading-relaxed font-light">
               Hi, I'm <span className="text-amber-50 font-normal">Ishika</span>. A curiosity-driven problem solver passionate about innovation and lifelong learning.
             </p>
             
-            <div className="mt-6 text-lg text-zinc-300 leading-loose">
+            <div className="mt-6 text-sm text-zinc-300 leading-loose">
               <p className="mb-4">
                 I began my journey with HTML and CSS, then moved into the world of JavaScript and Front-End Development.
                 Now, I'm expanding my skill set by exploring modern frameworks like React, Vue.js, and Three.js to build 
@@ -34,7 +34,7 @@ const About = () => {
           </div>
           
           <div className="mt-12 flex flex-wrap gap-4">
-            <div className="bg-zinc-800 px-4 py-2 rounded-full text-sm text-zinc-300">React</div>
+            <div className="bg-zinc-800 px-4 py-2 rounded-full text-[4px] text-zinc-300">React</div>
             <div className="bg-zinc-800 px-4 py-2 rounded-full text-sm text-zinc-300">JavaScript</div>
             <div className="bg-zinc-800 px-4 py-2 rounded-full text-sm text-zinc-300">Three.js</div>
             <div className="bg-zinc-800 px-4 py-2 rounded-full text-sm text-zinc-300">Vue.js</div>
@@ -42,8 +42,8 @@ const About = () => {
             <div className="bg-zinc-800 px-4 py-2 rounded-full text-sm text-zinc-300">HTML/CSS</div>
           </div>
           
-          <button className="flex uppercase items-center gap-4 px-8 py-4 mt-10 rounded-full text-amber-50 border-amber-50/60 border-2 transition-all duration-300 ease-in-out hover:bg-amber-50 hover:text-zinc-900 group">
-            <span>Read More</span>
+          <button className="flex uppercase items-center gap-1 px-3 py-2 mt-5 rounded-full text-amber-50 border-amber-50/60 border-2 transition-all duration-300 ease-in-out hover:bg-amber-50 hover:text-zinc-900 group">
+            <span className="text-sm">Read More</span>
             <svg className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
@@ -56,7 +56,7 @@ const About = () => {
           
           <img
             src="img/IMG-20240211-WA0104.jpg"
-            alt="Ishika Sharma"
+            alt="Ishika Singh"
             className="w-full h-full object-cover rounded-3xl transition-transform duration-500 ease-out group-hover:scale-105"
           />
           
@@ -72,12 +72,13 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Experience */}
           <div>
-            <h3 className="text-xl text-amber-50/80 mb-6 uppercase tracking-wide font-light">Experience</h3>
+            <h3 className="text-md text-amber-50/80 mb-6 uppercase tracking-wide font-light">Experience</h3>
             <div className="space-y-8">
               <div className="relative pl-6 border-l border-zinc-700">
                 <span className="absolute w-3 h-3 bg-amber-50 rounded-full -left-[7px] top-1"></span>
-                <h4 className="text-zinc-100 text-lg">Frontend Developer</h4>
+                <h4 className="text-zinc-100 text-[20px]">Frontend Developer</h4>
                 <p className="text-zinc-400 text-sm mb-2">NIIT University Teach Lead • 2025 - Present</p>
+                <p className="text-zinc-300 text-base">Building responsive web applications with modern JavaScript frameworks.</p>
                 
               </div>
               
@@ -98,10 +99,12 @@ const About = () => {
                 <span className="absolute w-3 h-3 bg-amber-50 rounded-full -left-[7px] top-1"></span>
                 <h4 className="text-zinc-100 text-lg">Bachelor in Computer Science</h4>
                 <p className="text-zinc-400 text-sm mb-2">NIIT University • 2024 - 2028</p>
+                
+                <p className="text-zinc-300 text-base">CSE Core.</p>
               </div>
               
-              <div className="relative pl-6 border-l border-zinc-700">
-                <span className="absolute w-3 h-3 bg-amber-50 rounded-full -left-[7px] top-1"></span>
+              <div className="relative pl-6 border-l border-zinc-700 mt-4 pt-5">
+                <span className="absolute w-3 h-3 bg-amber-50 rounded-full -left-[7px] top-1 "></span>
                 <h4 className="text-zinc-100 text-lg">Frontend Development Certification</h4>
                 <p className="text-zinc-400 text-sm mb-2">KG Coding • 2024</p>
                 <p className="text-zinc-300 text-base">Advanced JavaScript and Frontend frameworks.</p>
