@@ -98,7 +98,6 @@ const About = () => {
                 <span className="absolute w-3 h-3 bg-amber-50 rounded-full -left-[7px] top-1"></span>
                 <h4 className="text-zinc-100 text-lg">Bachelor in Computer Science</h4>
                 <p className="text-zinc-400 text-sm mb-2">NIIT University • 2024 - 2028</p>
-                <p className="text-zinc-300 text-base">Focused on web development and UI/UX design.</p>
               </div>
               
               <div className="relative pl-6 border-l border-zinc-700">
