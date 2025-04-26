@@ -158,9 +158,11 @@ export default function HeroSection() {
       {/* Hero background with gradient overlay for depth */}
       <div className="absolute inset-0">
         <img
-          src="/img/lamp-dark-room-spotlight-black-background_159167-123.avif"
+          src="https://i.pinimg.com/736x/69/dd/75/69dd75c8f8f9f95aa4721c5617e16960.jpg"
           alt="Hero background"
           className="w-full h-full object-cover"
+          onLoad={handleImageLoad}
+          onError={handleImageError}
         />
         {/* Sophisticated gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80"></div>
