@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.9",
-    "framer-motion": "^12.4.10",
+    "framer-motion": "^12.9.2",
     "gsap": "^3.12.7",
     "locomotive-scroll": "^5.0.0-beta.21",
     "react": "^19.0.0",

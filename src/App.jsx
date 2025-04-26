@@ -16,10 +16,8 @@ function App() {
     <div className="w-full text-2xl text-amber-50 bg-zinc-900 min-h-screen">
       <Navbar />
       <LandingPage />
-      <Marque />
       <About />
       <Eyes />
-      <Featured />
       <Cards />
       <Footer />
     </div>
