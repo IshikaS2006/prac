@@ -28,7 +28,7 @@ const Navbar = () => {
       } transition-all duration-300 shadow-lg`}
     >
       <div className="logo">
-        <h1 className="text-1xl md:text-2xl font-semibold tracking-wide uppercase bg-gradient-to-r from-blue-400 to-purple-600 text-transparent bg-clip-text">
+        <h1 className="text-1xl md:text-2xl font-semibold tracking-wide uppercase bg-gradient-to-r from-zinc-600 to-zinc-100 text-transparent bg-clip-text">
           MYPORTFOLIO
         </h1>
       </div>
